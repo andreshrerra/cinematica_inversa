@@ -2,6 +2,7 @@ from fastapi import FastAPI
 import roboticstoolbox as rtb
 import spatialmath as sm
 import numpy as np
+from fastapi.middleware.cors import CORSMiddleware
 
 app = FastAPI()
 
