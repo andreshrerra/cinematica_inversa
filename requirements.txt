@@ -1,0 +1,6 @@
+fastapi
+uvicorn
+numpy==1.23.5
+scipy==1.9.3
+roboticstoolbox-python
+spatialmath-python
