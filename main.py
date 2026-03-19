@@ -5,6 +5,14 @@ import numpy as np
 
 app = FastAPI()
 
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
 robot = rtb.DHRobot(
     [
         rtb.RevoluteDH(d=4.0, a=1.0, alpha=np.pi/2, offset=np.pi/2),
